@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎉 শুভ জন্মদিন প্রিয় বন্ধু 🎉</title>
+<style>
+body {
+  margin:0;
+  overflow:hidden;
+  background: radial-gradient(circle at center,#ff9ff3,#ff6b6b,#ffe4e1);
+  font-family:"Noto Sans Bengali","Poppins",sans-serif;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+h1 {
+  font-size:3rem;
+  text-align:center;
+  color:#fff;
+  text-shadow:0 0 10px #ff007f,0 0 20px #ff66b3;
+}
+p {
+  color:#fff;
+  font-size:1.2rem;
+  text-align:center;
+  line-height:1.6;
+  margin-top:20px;
+}
+.watermark {
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  color:rgba(255,255,255,0.5);
+  font-weight:bold;
+}
+.confetti {
+  position:absolute;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  opacity:0.9;
+  animation:fall 3s linear infinite;
+}
+@keyframes fall {
+  to { transform:translateY(100vh) rotate(720deg); opacity:0; }
+}
+</style>
+</head>
+<body>
+                      	<h1>🎂</h1>
+                     <h1>🎉শুভ জন্মদিন প্রিয় বন্ধু🎉</h1>
+<p>
+ 🤞জীবনে আনুক রঙিন হাসি,<br>
+  স্বপ্নগুলো হোক সত্যি সবই হাসি।<br>
+  ভবিষ্যৎ হোক উজ্জ্বল, সফলতার সোপানে,<br>
+  ♥️তোর জন্য শুভকামনা রইল♥️<br>😌মনে করে ট্রিট টা দিস😌<br>
+<b>😎Created by: BARUN HALDER♥️</b>
+</p>
+
+<div class="watermark">© BARUN HALDER</div>
+
+<script>
+// Confetti generation
+for(let i=0;i<120;i++){
+  let c=document.createElement('div');
+  c.className='confetti';
+  c.style.left=Math.random()*100+'vw';
+  c.style.backgroundColor=`hsl(${Math.random()*360},80%,70%)`;
+  c.style.width=c.style.height=Math.random()*6+4+'px';
+  c.style.animationDuration=(2+Math.random()*3)+'s';
+  document.body.appendChild(c);
+}
+</script>
+
+</body>
+</html>
